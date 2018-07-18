@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "An application to model an address book in Node",
   "main": "app.js",
+  "repository":  {
+    "type": "git",
+    "url": "https://github.com/andyprickett/address-bloc"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andy Prickett",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^5.1.0"
+  }
 }
