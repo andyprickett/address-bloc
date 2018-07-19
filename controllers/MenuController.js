@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 
 module.exports = class MenuController {
-  constructor(){
+  constructor() {
     this.mainMenuQuestions = [
       {
         type: "list",
@@ -16,7 +16,7 @@ module.exports = class MenuController {
     this.contacts = [];
   }
 
-  main(){
+  main() {
     //console.log('hello from main');
     console.log(`Welcome to AddressBloc!`);
     inquirer.prompt(this.mainMenuQuestions).then((response) => {
@@ -36,7 +36,7 @@ module.exports = class MenuController {
     });
   }
 
-  clear(){
+  clear() {
     //console.log('hello from clear');
     console.log("\x1Bc");
   }
@@ -46,8 +46,12 @@ module.exports = class MenuController {
     console.log('addContact called');
     this.main();
   }
+  
+  getContactCount() {
+    return this.contacts.length;
+  }
 
-  exit(){
+  exit() {
     console.log("Thanks for using AddressBloc!");
     process.exit();
   }
