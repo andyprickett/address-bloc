@@ -23,7 +23,7 @@ module.exports = class MenuController {
 
   main() {
     //console.log('hello from main');
-    console.log(`Welcome to AddressBloc!`);
+    console.log(`Welcome to Address Booc!`);
     inquirer.prompt(this.mainMenuQuestions).then((response) => {
       switch(response.mainMenuChoice) {
         case "Add new contact":
@@ -197,7 +197,7 @@ module.exports = class MenuController {
   }
   
   exit() {
-    console.log("Thanks for using AddressBloc!");
+    console.log("Thanks for using Address Booc!");
     process.exit();
   }
 }
